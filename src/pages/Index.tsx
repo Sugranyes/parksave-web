@@ -1,4 +1,4 @@
-import { Bluetooth, MapPin, Clock, Bell, Navigation, ShieldCheck, Apple, Play } from "lucide-react";
+import { Bluetooth, MapPin, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero-park.jpg";
 
@@ -36,16 +36,19 @@ const Index = () => {
             ubicació exacta. Quan el necessitis, només has d'obrir l'app i seguir la fletxa.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button size="lg" className="rounded-full bg-amber-grad text-primary-foreground hover:opacity-90 shadow-glow font-semibold">
-              <Apple className="mr-1" /> App Store
+            <Button asChild size="lg" className="rounded-full bg-amber-grad text-primary-foreground hover:opacity-90 shadow-glow font-semibold">
+              <a href="#download"><Play className="mr-1" /> Descarrega per Android</a>
             </Button>
-            <Button size="lg" variant="secondary" className="rounded-full">
-              <Play className="mr-1" /> Google Play
+            <Button asChild size="lg" variant="secondary" className="rounded-full">
+              <a href="https://www.buymeacoffee.com/parkmind" target="_blank" rel="noopener noreferrer">
+                <Coffee className="mr-1" /> Convida'm a un cafè
+              </a>
             </Button>
           </div>
-          <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-6 pt-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2"><Gift className="h-4 w-4 text-accent" /> Totalment gratuïta</div>
             <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> 100% privat</div>
-            <div className="flex items-center gap-2"><Bluetooth className="h-4 w-4 text-accent" /> Funciona en segon pla</div>
+            <div className="flex items-center gap-2"><Bluetooth className="h-4 w-4 text-accent" /> Només Android</div>
           </div>
         </div>
 
