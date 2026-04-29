@@ -384,7 +384,17 @@ const Index = () => {
 
       <footer className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground border-t border-border">
         <p>© 2026 ParkSave. Fet amb ☕ a Catalunya.</p>
-        <div className="flex gap-6">
+      <footer className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground border-t border-border">
+        <p>© 2026 ParkSave. Fet amb ☕ a Catalunya.</p>
+        <div className="flex items-center gap-6">
+          <a
+            href="https://github.com/Sugranyes/parkSave"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-foreground transition-colors"
+          >
+            <Github className="h-4 w-4" /> GitHub
+          </a>
           <a href="#" className="hover:text-foreground transition-colors">Privadesa</a>
           <a href="#" className="hover:text-foreground transition-colors">Termes</a>
           <a href="#" className="hover:text-foreground transition-colors">Contacte</a>
