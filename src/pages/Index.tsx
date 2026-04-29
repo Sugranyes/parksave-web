@@ -334,7 +334,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
               <Button asChild size="lg" className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-semibold">
-                <a href="#" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega a Google Play</a>
+                <a href="https://github.com/Sugranyes/parkSave/releases/download/app/app-release.apk" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega l'APK</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
                 <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
