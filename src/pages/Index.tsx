@@ -1,4 +1,4 @@
-import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode } from "lucide-react";
+import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import qrDownload from "@/assets/qr-download.png";
 
