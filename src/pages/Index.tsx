@@ -1,4 +1,4 @@
-import { Bluetooth, MapPin, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, P } from "lucide-react";
+import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // ============= REUSABLE PHONE FRAME =============
