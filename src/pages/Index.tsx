@@ -1,5 +1,6 @@
-import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock } from "lucide-react";
+import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import qrDownload from "@/assets/qr-download.png";
 
 // ============= REUSABLE PHONE FRAME =============
 const PhoneFrame = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
@@ -340,6 +341,21 @@ const Index = () => {
                   <Coffee className="mr-1" /> Buy me a coffee
                 </a>
               </Button>
+            </div>
+
+            {/* QR code */}
+            <div className="flex flex-col items-center gap-3 pt-8">
+              <div className="bg-background rounded-2xl p-3 shadow-soft">
+                <img
+                  src={qrDownload}
+                  alt="Codi QR per descarregar ParkSave per Android"
+                  className="h-40 w-40 sm:h-48 sm:w-48"
+                  loading="lazy"
+                />
+              </div>
+              <p className="flex items-center gap-2 text-sm text-primary-foreground/90 font-medium">
+                <QrCode className="h-4 w-4" /> Escaneja per descarregar
+              </p>
             </div>
           </div>
         </div>
