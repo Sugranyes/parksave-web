@@ -353,6 +353,11 @@ const Index = () => {
                 <a href="https://github.com/Sugranyes/parkSave/releases/download/app/app-release.apk" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega l'APK</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
+                <a href="https://github.com/Sugranyes/parkSave" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-1" /> Veure a GitHub
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
                 <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
                   <Coffee className="mr-1" /> Buy me a coffee
                 </a>
