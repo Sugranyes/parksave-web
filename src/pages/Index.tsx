@@ -1,4 +1,4 @@
-import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode } from "lucide-react";
+import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import qrDownload from "@/assets/qr-download.png";
 
@@ -172,12 +172,28 @@ const Index = () => {
           <a href="#features" className="hover:text-foreground transition-colors">Funcions</a>
           <a href="#how" className="hover:text-foreground transition-colors">Com funciona</a>
           <a href="#download" className="hover:text-foreground transition-colors">Descarrega</a>
-        </nav>
-        <Button asChild variant="secondary" size="sm" className="rounded-full">
-          <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
-            <Coffee className="mr-1 h-4 w-4" /> Cafè
+          <a
+            href="https://github.com/Sugranyes/parkSave"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-foreground transition-colors"
+            aria-label="Codi font a GitHub"
+          >
+            <Github className="h-4 w-4" /> Codi
           </a>
-        </Button>
+        </nav>
+        <div className="flex items-center gap-2">
+          <Button asChild variant="ghost" size="icon" className="rounded-full md:hidden" aria-label="Codi font a GitHub">
+            <a href="https://github.com/Sugranyes/parkSave" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+            </a>
+          </Button>
+          <Button asChild variant="secondary" size="sm" className="rounded-full">
+            <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
+              <Coffee className="mr-1 h-4 w-4" /> Cafè
+            </a>
+          </Button>
+        </div>
       </header>
 
       {/* HERO */}
@@ -337,6 +353,11 @@ const Index = () => {
                 <a href="https://github.com/Sugranyes/parkSave/releases/download/app/app-release.apk" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega l'APK</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
+                <a href="https://github.com/Sugranyes/parkSave" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-1" /> Veure a GitHub
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
                 <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
                   <Coffee className="mr-1" /> Buy me a coffee
                 </a>
@@ -363,7 +384,15 @@ const Index = () => {
 
       <footer className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground border-t border-border">
         <p>© 2026 ParkSave. Fet amb ☕ a Catalunya.</p>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
+          <a
+            href="https://github.com/Sugranyes/parkSave"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-foreground transition-colors"
+          >
+            <Github className="h-4 w-4" /> GitHub
+          </a>
           <a href="#" className="hover:text-foreground transition-colors">Privadesa</a>
           <a href="#" className="hover:text-foreground transition-colors">Termes</a>
           <a href="#" className="hover:text-foreground transition-colors">Contacte</a>
