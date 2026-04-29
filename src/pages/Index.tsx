@@ -384,8 +384,6 @@ const Index = () => {
 
       <footer className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground border-t border-border">
         <p>© 2026 ParkSave. Fet amb ☕ a Catalunya.</p>
-      <footer className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground border-t border-border">
-        <p>© 2026 ParkSave. Fet amb ☕ a Catalunya.</p>
         <div className="flex items-center gap-6">
           <a
             href="https://github.com/Sugranyes/parkSave"
