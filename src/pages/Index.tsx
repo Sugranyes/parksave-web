@@ -27,7 +27,7 @@ const Index = () => {
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs text-muted-foreground backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
             Automàtic via Bluetooth · Sense piles de feina
-          </span>
+          </div>
           <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-gradient">
             Mai més oblidis on has aparcat.
           </h1>
