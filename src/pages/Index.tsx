@@ -172,12 +172,28 @@ const Index = () => {
           <a href="#features" className="hover:text-foreground transition-colors">Funcions</a>
           <a href="#how" className="hover:text-foreground transition-colors">Com funciona</a>
           <a href="#download" className="hover:text-foreground transition-colors">Descarrega</a>
-        </nav>
-        <Button asChild variant="secondary" size="sm" className="rounded-full">
-          <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
-            <Coffee className="mr-1 h-4 w-4" /> Cafè
+          <a
+            href="https://github.com/Sugranyes/parkSave"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-foreground transition-colors"
+            aria-label="Codi font a GitHub"
+          >
+            <Github className="h-4 w-4" /> Codi
           </a>
-        </Button>
+        </nav>
+        <div className="flex items-center gap-2">
+          <Button asChild variant="ghost" size="icon" className="rounded-full md:hidden" aria-label="Codi font a GitHub">
+            <a href="https://github.com/Sugranyes/parkSave" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+            </a>
+          </Button>
+          <Button asChild variant="secondary" size="sm" className="rounded-full">
+            <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
+              <Coffee className="mr-1 h-4 w-4" /> Cafè
+            </a>
+          </Button>
+        </div>
       </header>
 
       {/* HERO */}
