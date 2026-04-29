@@ -1,5 +1,6 @@
-import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock } from "lucide-react";
+import { Bluetooth, Clock, Bell, Navigation, ShieldCheck, Play, Coffee, Gift, ChevronRight, RefreshCw, History, Lock, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import qrDownload from "@/assets/qr-download.png";
 
 // ============= REUSABLE PHONE FRAME =============
 const PhoneFrame = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
