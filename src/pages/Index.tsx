@@ -157,17 +157,19 @@ const Index = () => {
           }} />
           <div className="relative space-y-6 max-w-2xl mx-auto">
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
-              Descarrega ParkMind. Oblida't d'oblidar.
+              Descarrega-la. És gratis per sempre.
             </h2>
             <p className="text-primary-foreground/80 text-lg">
-              Gratis. Sense anuncis. Sense compte. Només l'app i el teu cotxe.
+              Sense anuncis. Sense compte. Només l'app i el teu cotxe. Si t'agrada, convida'm a un cafè ☕
             </p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
-              <Button size="lg" className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-semibold">
-                <Apple className="mr-1" /> Descarrega per iOS
+              <Button asChild size="lg" className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-semibold">
+                <a href="#" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega a Google Play</a>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                <Play className="mr-1" /> Descarrega per Android
+              <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
+                <a href="https://www.buymeacoffee.com/parkmind" target="_blank" rel="noopener noreferrer">
+                  <Coffee className="mr-1" /> Buy me a coffee
+                </a>
               </Button>
             </div>
           </div>
