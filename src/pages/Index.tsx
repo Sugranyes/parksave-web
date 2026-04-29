@@ -173,7 +173,7 @@ const Index = () => {
           <a href="#download" className="hover:text-foreground transition-colors">Descarrega</a>
         </nav>
         <Button asChild variant="secondary" size="sm" className="rounded-full">
-          <a href="https://www.buymeacoffee.com/parksave" target="_blank" rel="noopener noreferrer">
+          <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
             <Coffee className="mr-1 h-4 w-4" /> Cafè
           </a>
         </Button>
@@ -198,7 +198,7 @@ const Index = () => {
               <a href="#download"><Play className="mr-1" /> Descarrega per Android</a>
             </Button>
             <Button asChild size="lg" variant="secondary" className="rounded-full">
-              <a href="https://www.buymeacoffee.com/parksave" target="_blank" rel="noopener noreferrer">
+              <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
                 <Coffee className="mr-1" /> Buy me a coffee
               </a>
             </Button>
@@ -336,7 +336,7 @@ const Index = () => {
                 <a href="#" target="_blank" rel="noopener noreferrer"><Play className="mr-1" /> Descarrega a Google Play</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                <a href="https://www.buymeacoffee.com/parksave" target="_blank" rel="noopener noreferrer">
+                <a href="https://buymeacoffee.com/sugrapps" target="_blank" rel="noopener noreferrer">
                   <Coffee className="mr-1" /> Buy me a coffee
                 </a>
               </Button>
