@@ -268,7 +268,7 @@ const Index = () => {
           {[
             { icon: Bluetooth, title: "Detecció automàtica", desc: "Quan el Bluetooth del cotxe es desconnecta, ParkSave guarda la teva posició a l'instant." },
             { icon: Navigation, title: "Tornar-hi és fàcil", desc: "Mapa i navegació integrada. Sempre saps cap on anar." },
-            { icon: Clock, title: "Recordatori de pàrquing", desc: "Posa un temps màxim i rep un avís abans que caduqui el tiquet. (pròximament)" },
+            { icon: Clock, title: "Recordatori de pàrquing", desc: "Posa un temps màxim i rep un avís abans que caduqui el tiquet.", disabled: true },
             { icon: Bell, title: "Notificació immediata", desc: "En desconnectar, una notificació amb la ubicació exacta apareix al telèfon." },
             { icon: ShieldCheck, title: "Privadesa total", desc: "Les teves ubicacions es queden al teu telèfon. Mai a cap servidor." },
             { icon: History, title: "Historial complet", desc: "Consulta tots els llocs on has aparcat els darrers dies." },
