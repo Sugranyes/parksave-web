@@ -89,7 +89,7 @@ const DevicesMockup = () => (
         </div>
         <div className="flex-1">
           <p className="font-bold text-[10px] text-gray-900">Monitorització activa</p>
-          <p className="text-[7px] text-gray-500 leading-tight">Guarda posició en desconnectar</p>
+          <p className="text-[7px] text-gray-500 leading-tight">Guarda la posició en desconnectar</p>
         </div>
         <div className="h-3.5 w-6 rounded-full bg-[#1d8348] relative">
           <div className="absolute right-0.5 top-0.5 h-2.5 w-2.5 bg-white rounded-full" />
@@ -208,7 +208,7 @@ const Index = () => {
           </h1>
           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
             ParkSave detecta quan el teu cotxe es desconnecta del Bluetooth i guarda
-            la ubicació exacta. Sense fer res. Quan el necessitis, obre l'app i tornes-hi.
+            la ubicació exacta. Sense fer res. Quan el necessitis, obre l'app i hi tornes.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="rounded-full bg-amber-grad text-primary-foreground hover:opacity-90 shadow-glow font-semibold">
