@@ -268,17 +268,29 @@ const Index = () => {
           {[
             { icon: Bluetooth, title: "Detecció automàtica", desc: "Quan el Bluetooth del cotxe es desconnecta, ParkSave guarda la teva posició a l'instant." },
             { icon: Navigation, title: "Tornar-hi és fàcil", desc: "Mapa i navegació integrada. Sempre saps cap on anar." },
-            { icon: Clock, title: "Recordatori de pàrquing", desc: "Posa un temps màxim i rep un avís abans que caduqui el tiquet. (pròximament)" },
+            { icon: Clock, title: "Recordatori de pàrquing", desc: "Posa un temps màxim i rep un avís abans que caduqui el tiquet.", disabled: true },
             { icon: Bell, title: "Notificació immediata", desc: "En desconnectar, una notificació amb la ubicació exacta apareix al telèfon." },
             { icon: ShieldCheck, title: "Privadesa total", desc: "Les teves ubicacions es queden al teu telèfon. Mai a cap servidor." },
             { icon: History, title: "Historial complet", desc: "Consulta tots els llocs on has aparcat els darrers dies." },
-          ].map(({ icon: Icon, title, desc }) => (
+          ].map(({ icon: Icon, title, desc, disabled }) => (
             <div
               key={title}
-              className="group bg-card-grad border border-border rounded-2xl p-7 hover:border-primary/50 transition-all duration-500 hover:-translate-y-1"
+              className={`group bg-card-grad border border-border rounded-2xl p-7 transition-all duration-500 relative ${
+                disabled
+                  ? "opacity-60 grayscale"
+                  : "hover:border-primary/50 hover:-translate-y-1"
+              }`}
+              aria-disabled={disabled || undefined}
             >
-              <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center mb-5 group-hover:bg-amber-grad group-hover:shadow-glow transition-all">
-                <Icon className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" strokeWidth={2} />
+              {disabled && (
+                <span className="absolute top-4 right-4 rounded-full bg-secondary border border-border px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
+                  Pròximament
+                </span>
+              )}
+              <div className={`h-12 w-12 rounded-xl bg-secondary flex items-center justify-center mb-5 transition-all ${
+                disabled ? "" : "group-hover:bg-amber-grad group-hover:shadow-glow"
+              }`}>
+                <Icon className={`h-5 w-5 text-primary transition-colors ${disabled ? "" : "group-hover:text-primary-foreground"}`} strokeWidth={2} />
               </div>
               <h3 className="font-display font-semibold text-xl mb-2">{title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
